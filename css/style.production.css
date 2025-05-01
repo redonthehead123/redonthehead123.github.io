@@ -140,7 +140,6 @@ button:focus {
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   -o-transition: transform 0.3s ease;
-  transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-box-shadow: 4px 3px 19px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 4px 3px 19px 0px rgba(0, 0, 0, 0.3);
