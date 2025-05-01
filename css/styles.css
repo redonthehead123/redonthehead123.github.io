@@ -20,6 +20,10 @@
   --grid-gap: 20px;
   --grid-gap-mobile: 10px;
   --box-shadow: 4px 3px 19px 0px rgba(0, 0, 0, 0.3);
+  --animation-color-start: #edc655;
+  --animation-color-middle: #fcffad;
+  --animation-color-end: #f76414;
+  --grid-item-bg-color: #697b4f;
 }
 
 * {
@@ -128,6 +132,7 @@ button:focus {
 
 .grid__item {
   display: inline-block;
+  width: 33%;
   transition: transform 0.3s ease;
   box-shadow: var(--box-shadow);
 }
@@ -146,7 +151,7 @@ button:focus {
   }
 
   .grid__item {
-    background-color: #697b4f;
+    background-color: var(--grid-item-bg-color);
     width: auto;
     min-height: auto;
     margin: 0;
@@ -183,4 +188,46 @@ button:focus {
   h1 {
     font-size: 22px;
   }
+}
+
+@keyframes color-change {
+  0% {
+    fill: var(--animation-color-start);
+  }
+  50% {
+    fill: var(--animation-color-middle);
+  }
+  100% {
+    fill: var(--animation-color-end);
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }

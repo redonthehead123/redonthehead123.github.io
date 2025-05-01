@@ -1,0 +1,1 @@
+In the development of this website I used stylelint, HTMLHint and VSCodes built in css linter. The only setting I changed was CSS Important rule to warning.
