@@ -21,7 +21,6 @@ body {
 h1 {
   font-size: 30px;
   font-weight: 700;
-  text-align: center;
 }
 
 h2 {
@@ -68,6 +67,18 @@ h3 {
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
 }
 
 a {
