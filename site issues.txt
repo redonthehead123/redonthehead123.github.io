@@ -1,0 +1,6 @@
+Social media buttons at bottom of all pages don't link to anything.
+Profile picture on index.html not centered or rounded.
+Main text on all pages sits to the left of the page.
+Logo design doesn't look nice to me.
+Photo on about.html is massive on desktop.
+Code from previous projects got deleted at some point.

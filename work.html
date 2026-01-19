@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red's Portfolio - Work</title>
+    <link rel="shortcut icon" href="./favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+<header class="page-header">
+    <!-- logo img -->
+    <img src="./img/logo.png" alt="logo" class="page-header__item">
+    <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          </li>
+          <li role="presentation">
+            <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+          </li>
+        </ul>
+    </nav>
+</header>
+<section>
+    <h1>Work</h1>
+    <div class="grid">
+        <!-- Grid items will live here -->
+        <div class="grid__item">
+            <h2>My Portfolio</h2>
+            <p>
+                This is the site you are currently viewing.
+            </p>
+            <a href="index.html">View Project Here</a>
+        </div>
+        <div class="grid__item">
+            <h2>Meet App</h2>
+            <img src="./img/meet_app.png" alt="Meet App Screenshot" style="width: 100%; margin-bottom: 10px;">
+            <p>
+                A serverless, progressive web application (PWA) built with React using test-driven development (TDD). 
+                The app fetches upcoming events from the Google Calendar API, allowing users to filter events by city, 
+                view event details, and visualize data with interactive charts. Features offline functionality and 
+                can be installed as a home screen shortcut.
+            </p>
+            <p><strong>Technologies:</strong> React, Vite, Google Calendar API, AWS Lambda, Recharts, Jest, Puppeteer, PWA, OAuth2, Atatus</p>
+            <a href="https://meetapp-tau.vercel.app/" target="_blank">View Live App</a> | 
+            <a href="https://github.com/redonthehead123/meet_app" target="_blank">GitHub Repo</a>
+        </div>
+        <div class="grid__item">
+            <h2>Project 3</h2>
+            <p>
+                This is a description to test the layout of this page.
+            </p>
+            <a href="#">View Project Here</a>
+        </div>
+        <div class="grid__item">
+            <h2>Project 4</h2>
+            <p>
+                Description of project 4.
+            </p>
+            <a href="#">View Project Here</a>
+        </div>
+        <div class="grid__item">
+            <h2>Project 5</h2>
+            <p>
+                Description of project 5.
+            </p>
+            <a href="#">View Project Here</a>
+        </div>
+        <div class="grid__item">
+            <h2>Project 6</h2>
+            <p>
+                Description of project 6.
+            </p>
+            <a href="#">View Project Here</a>
+        </div>
+    </div>
+</section>
+<footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media-icons">
+        <!-- Github logo -->
+        <a href="https://github.com/redonthehead123" target="_blank">
+            <img src="img/github_icon.svg" alt="Github logo">
+        </a>
+        <!-- Steam logo -->
+        <a href="https://steamcommunity.com/profiles/76561198171704934/" target="_blank">
+            <img src="img/steam_icon.svg" alt="Steam logo">
+        </a>
+        <!-- Discord logo -->
+        <a href="https://discordapp.com/users/222989501591584769" target="_blank">
+            <img src="img/discord_icon.svg" alt="Discord logo">
+        </a>
+    </div>
+</footer>
+<script src="js/theme-toggle.js"></script>
+<!-- <script src="js/tota11y.min.js"></script> -->
+</body>
+</html>
