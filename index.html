@@ -9,13 +9,13 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
 <header class="page-header">
-    <!-- logo img -->
-    <img src="./img/logo.png" alt="logo" class="page-header__item">
+    <!-- logo text -->
+    <div class="page-header__item page-header__logo">Jordan Greer</div>
     <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
@@ -37,15 +37,22 @@
     </nav>
 </header>
 <main>
-    <div class="profile">
-        <!-- Portrait image here -->
-        <img src="./img/joker.png" class="profile__portrait" alt="Profile picture">
-        <h1>Hello World</h1>
-        <p>
-            My name is Jordan. I am a <span>web</span> developer from the US.
-        </p>
-        <a href="work.html">Check out some of my code</a>
+  <div class="profile home-hero">
+    <!-- Portrait image here -->
+    <img src="./img/joker.png" class="profile__portrait home-hero__portrait" alt="Profile picture">
+    <div class="home-hero__content">
+      <p class="home-hero__eyebrow">Frontend developer in progress</p>
+      <h1>Designing clean, practical web experiences.</h1>
+      <p class="home-hero__intro">
+        My name is Jordan Greer. I’m a technician learning web development and building projects with HTML, CSS, JavaScript, and modern tooling.
+      </p>
+      <div class="home-hero__actions">
+        <a class="home-hero__button" href="work.html">View my work</a>
+        <a class="home-hero__button" href="contact.html">Contact me</a>
+      </div>
+      <p class="home-hero__supporting-text">Open to entry-level opportunities, freelance work, and collaboration.</p>
     </div>
+  </div>
 </main>
 <footer class="page-footer">
   <p>Find me on</p>
@@ -63,6 +70,7 @@
           <img src="img/discord_icon.svg" alt="Discord logo">
       </a>
   </div>
+  <a class="page-footer__resume" href="https://profile.indeed.com/p/jordang-1p0lvwq" target="_blank" rel="noopener noreferrer">View my resume</a>
 </footer>
 <script src="js/theme-toggle.js"></script>
 <!-- <script src="js/tota11y.min.js"></script> -->
